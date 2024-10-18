@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    box-sizing: border-box;
+    background-color: #11001c;
+}
+
+header,
+.hero,
+.content,
+footer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hero {
+    overflow: hidden;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background: #18283a;
+    background-image: url(Namnlös-design.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    border-bottom: 2px solid #ff82f5;
+    box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
+  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+}
+
+.hero p{
+    font-family: italiana;
+    padding-left: 24rem;
+    font-size: x-large;
+    color: #ff00de;
+    text-shadow: 0 0 8px #fff,
+               0 0 10px #fff,
+               0 0 12px #fff, 
+               0 0 14px #fff;
+}
+
+h1 {
+    font-size: 64px;
+    text-shadow: 0 0 8px #ff00de, 
+               0 0 10px #fff,
+               0 0 12px #ff00de,
+               0 0 14px #ff00de;
+}
+
+.kontainer {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 110px;
+    padding: 0px;
+  border-left: 2px solid #ff82f5;
+  border-right: 2px solid #ff82f5;
+  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
+  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+}
+
+.vänster-sida, .höger-sida {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vänster-sida {
+    background-color: #f0f0f0;
+    background-image: url(hajhaj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    width: 100%;
+}
+
+.höger-sida {
+    background-color: #0a090a;
+    height: 45vh;
+}
+
+.centrerad-text {
+    text-align: center;
+    width: 100%;
+    font-size: x-large;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content article {
+    overflow: hidden;
+    background: #21012d;
+    margin: 0 110px;
+    padding: 20px;
+  border-left: 2px solid #ff82f5;
+  border-right: 2px solid #ff82f5;
+  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
+              0px 0 10px 5px rgba(255, 91, 225, 0.7);
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #ff00de,
+               0 0 10px #fff,
+               0 0 12px #ff00de,
+               0 0 14px #ff00de;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #0a090a;
+    color: #f9f8f9;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 110px;
+    margin-bottom: 60px;
+    height: 40vh;
+    padding: 20px;
+  border-left: 2px solid #ff82f5;
+  border-right: 2px solid #ff82f5;
+  border-bottom: 2px solid #ff82f5;
+  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
+  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+}
+
+.kontainer-footer{
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+
+}
+
+.vänster-footer, .footer-icons {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 7rem;
+    padding-right: 13rem;
+    padding-left: 13rem;
+}
+
+.footer-icons {
+    justify-content: flex-end;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.footer-icons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa-brands {
+    font-size: 1.5em; 
+}
+
+.under-footer {
+    background-color: #11001c;
+    color: #ff00de;
+    text-shadow: 0 0 20px #fff, 
+               0 0 20px #ffffff,
+               0 0 20px #fff,
+               0 0 20px #fff;
+    text-align: center; 
+    padding: 1rem; 
+    margin: 0 110px;
+    margin-bottom: 60px;  
+}
