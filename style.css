@@ -9,10 +9,7 @@ body {
     background-color: #11001c;
 }
 
-header,
-.hero,
-.content,
-footer {
+header, .hero, .content, footer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -32,7 +29,7 @@ footer {
     justify-content: center;
     border-bottom: 2px solid #ff82f5;
     box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    0px 0 10px 5px rgba(255, 91, 225, 0.7);
 }
 
 .hero p{
@@ -61,10 +58,10 @@ h1 {
     align-items: center;
     margin: 0 110px;
     padding: 0px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 2px solid #ff82f5;
+    border-right: 2px solid #ff82f5;
+    box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
+    0px 0 10px 5px rgba(255, 91, 225, 0.7);
 }
 
 .vänster-sida, .höger-sida {
@@ -108,10 +105,10 @@ h1 {
     background: #21012d;
     margin: 0 110px;
     padding: 20px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-              0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 2px solid #ff82f5;
+    border-right: 2px solid #ff82f5;
+    box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7),
+                0px 0 10px 5px rgba(255, 91, 225, 0.7);
 }
 
 .content h2 {
@@ -153,18 +150,17 @@ footer {
     margin-bottom: 60px;
     height: 40vh;
     padding: 20px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  border-bottom: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 2px solid #ff82f5;
+    border-right: 2px solid #ff82f5;
+    border-bottom: 2px solid #ff82f5;
+    box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7),
+    0px 0 10px 5px rgba(255, 91, 225, 0.7);
 }
 
-.kontainer-footer{
+.kontainer-footer {
     display: flex;
     justify-content: space-between; 
     width: 100%;
-
 }
 
 .vänster-footer, .footer-icons {
@@ -191,6 +187,12 @@ footer {
 
 .fa-brands {
     font-size: 1.5em; 
+    animation: spinIcon 5s linear infinite;
+}
+
+@keyframes spinIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .under-footer {
@@ -205,4 +207,3 @@ footer {
     margin: 0 110px;
     margin-bottom: 60px;  
 }
-
