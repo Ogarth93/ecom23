@@ -4,67 +4,62 @@
 }
 
 body {
-    font-family: poppins;
+    font-family: 'Comic Sans MS', cursive;
     box-sizing: border-box;
-    background-color: #11001c;
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    animation: backgroundAnimation 10s infinite linear;
 }
 
-header,
-.hero,
-.content,
-footer {
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header, .hero, .content, footer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .hero {
-    overflow: hidden;
     padding: 2rem;
     text-align: center;
     color: #ffffff;
-    background: #18283a;
+    background: radial-gradient(circle, #ff00ff, #ff69b4, #ff1493);
     background-image: url(Namnlös-design.jpg);
     height: 90vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    border-bottom: 2px solid #ff82f5;
-    box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-bottom: 5px dashed #ffcc00;
+    box-shadow: 0px 0 20px 10px rgba(255, 0, 255, 0.7), 0px 0 20px 10px rgba(0, 255, 255, 0.7);
 }
 
-.hero p{
-    font-family: italiana;
+.hero p {
+    font-family: 'Brush Script MT', cursive;
     padding-left: 24rem;
-    font-size: x-large;
-    color: #ff00de;
-    text-shadow: 0 0 8px #fff,
-               0 0 10px #fff,
-               0 0 12px #fff, 
-               0 0 14px #fff;
+    font-size: 2.5rem;
+    color: #ff1493;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #ff00ff;
 }
 
 h1 {
-    font-size: 64px;
-    text-shadow: 0 0 8px #ff00de, 
-               0 0 10px #fff,
-               0 0 12px #ff00de,
-               0 0 14px #ff00de;
+    font-size: 5rem;
+    color: #ffff00;
+    text-shadow: 0 0 10px #ff00ff, 0 0 15px #00ff00, 0 0 20px #ff4500;
 }
 
 .kontainer {
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 110px;
     padding: 0px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 5px dotted #ff4500;
+    border-right: 5px dotted #00ff00;
+    box-shadow: 0px 0 20px 10px rgba(255, 0, 0, 0.7), 0px 0 20px 10px rgba(0, 0, 255, 0.7);
 }
 
 .vänster-sida, .höger-sida {
@@ -76,7 +71,7 @@ h1 {
 }
 
 .vänster-sida {
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #ff0000, #ffa500, #ffff00);
     background-image: url(hajhaj.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,15 +81,16 @@ h1 {
 }
 
 .höger-sida {
-    background-color: #0a090a;
+    background: linear-gradient(135deg, #00ff00, #0000ff, #ff00ff);
     height: 45vh;
 }
 
 .centrerad-text {
     text-align: center;
     width: 100%;
-    font-size: x-large;
-    color: #fff;
+    font-size: 2rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #ffff00, 0 0 15px #ff00ff, 0 0 20px #ff0000;
 }
 
 .content {
@@ -104,47 +100,41 @@ h1 {
 }
 
 .content article {
-    overflow: hidden;
-    background: #21012d;
+    background: linear-gradient(90deg, #00ff00, #ffff00, #ff69b4);
     margin: 0 110px;
     padding: 20px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-              0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 5px dashed #ff1493;
+    border-right: 5px dashed #00ffff;
+    box-shadow: 0px 0 20px 10px rgba(255, 165, 0, 0.7), 0px 0 20px 10px rgba(0, 191, 255, 0.7);
 }
 
 .content h2 {
-    font-size: 1.5rem;
-    color: #ffffff;
+    font-size: 2rem;
+    color: #ffcc00;
     text-align: center;
     margin-top: 25px;
     margin-bottom: 10px;
-    text-shadow: 0 0 8px #ff00de,
-               0 0 10px #fff,
-               0 0 12px #ff00de,
-               0 0 14px #ff00de;
+    text-shadow: 0 0 15px #00ffcc, 0 0 20px #ff00ff, 0 0 25px #ffa500;
 }
 
 .content p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    line-height: 1.8;
     color: #ffffff;
     text-align: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 2rem;
+    text-shadow: 0 0 10px #ff00ff, 0 0 15px #ffcc00, 0 0 20px #00ffcc;
 }
 
 hr {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
+    border: 2px solid #ff69b4;
 }
 
 footer {
-    background-color: #0a090a;
-    color: #f9f8f9;
+    background: linear-gradient(135deg, #ff69b4, #ff4500, #00ffcc);
+    color: #ffffff;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -152,19 +142,16 @@ footer {
     margin: 0 110px;
     margin-bottom: 60px;
     height: 40vh;
-    padding: 20px;
-  border-left: 2px solid #ff82f5;
-  border-right: 2px solid #ff82f5;
-  border-bottom: 2px solid #ff82f5;
-  box-shadow: 0px 0 10px 5px rgba(255, 91, 225, 0.7), 
-  0px 0 10px 5px rgba(255, 91, 225, 0.7);
+    border-left: 5px dotted #ff00ff;
+    border-right: 5px dotted #00ffcc;
+    border-bottom: 5px dashed #ffa500;
+    box-shadow: 0px 0 20px 10px rgba(0, 255, 255, 0.7), 0px 0 20px 10px rgba(255, 182, 193, 0.7);
 }
 
-.kontainer-footer{
+.kontainer-footer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
-
 }
 
 .vänster-footer, .footer-icons {
@@ -181,7 +168,9 @@ footer {
 }
 
 .icon {
-    margin: 0 10px;
+    margin: 0 20px;
+    color: #ff69b4;
+    text-shadow: 0 0 10px #00ff00, 0 0 15px #ffff00;
 }
 
 .footer-icons a {
@@ -190,18 +179,24 @@ footer {
 }
 
 .fa-brands {
-    font-size: 1.5em; 
+    font-size: 2em;
+    animation: spinIcon 5s linear infinite;
+}
+
+@keyframes spinIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .under-footer {
-    background-color: #11001c;
-    color: #ff00de;
-    text-shadow: 0 0 20px #fff, 
-               0 0 20px #ffffff,
-               0 0 20px #fff,
-               0 0 20px #fff;
-    text-align: center; 
-    padding: 1rem; 
+    background: linear-gradient(45deg, #ff00ff, #00ffcc, #ff69b4);
+    color: #ffffff;
+    text-shadow: 0 0 25px #00ff00, 0 0 25px #ff00ff;
+    text-align: center;
+    padding: 1rem;
     margin: 0 110px;
-    margin-bottom: 60px;  
+    margin-bottom: 60px;
+    border-top: 5px solid #ffcc00;
+    box-shadow: 0px 0 20px 10px rgba(255, 0, 255, 0.7), 0px 0 20px 10px rgba(0, 255, 127, 0.7);
 }
+
